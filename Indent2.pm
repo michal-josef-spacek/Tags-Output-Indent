@@ -6,7 +6,7 @@ use strict;
 use warnings;
 
 # Modules.
-use Error::Simple::Multiple qw(err);
+use Error::Pure qw(err);
 use Indent;
 use Indent::Word;
 use Indent::Block;
@@ -372,7 +372,7 @@ __END__
 
 =head1 DEPENDENCIES
 
-L<Error::Simple::Multiple(3pm)>,
+L<Error::Pure(3pm)>,
 L<Indent(3pm)>,
 L<Indent::Word(3pm)>,
 L<Indent::Block(3pm)>,
