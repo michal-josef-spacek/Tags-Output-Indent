@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 6;
 
 print "Testing: Simple tag without parameters (sgml version).\n";
-my $obj = Tags2::Output::Indent->new(
+my $obj = Tags::Output::Indent->new(
 	'xml' => 0,
 );
 $obj->put(
@@ -54,7 +54,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 print "Testing: Simple tag without parameters (xml version).\n";
-$obj = Tags2::Output::Indent->new(
+$obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );
 $obj->put(

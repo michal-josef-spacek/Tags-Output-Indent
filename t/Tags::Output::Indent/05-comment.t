@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 10;
 
 print "Testing: Comment.\n";
-my $obj = Tags2::Output::Indent->new(
+my $obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );
 $obj->put(

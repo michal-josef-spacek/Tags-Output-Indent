@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
 print "Testing: No simple.\n";
-my $obj = Tags2::Output::Indent->new(
+my $obj = Tags::Output::Indent->new(
 	'no_simple' => ['tag'],
 );
 $obj->put(

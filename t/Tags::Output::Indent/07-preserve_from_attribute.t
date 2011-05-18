@@ -1,12 +1,12 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
 print "Testing: Preserving from attributes.\n";
 # TODO Preserving v sgml (coz je tento kod) urcite neni definovano jako
 # xml:space.
 print "- CHILD1 preserving is off.\n";
-my $obj = Tags2::Output::Indent->new;
+my $obj = Tags::Output::Indent->new;
 my $text = <<"END";
   text
      text
@@ -59,4 +59,4 @@ chomp $right_ret;
 #is($ret, $right_ret);
 
 # TODO Pridat vnorene testy.
-# Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags2::Output::Indent.
+# Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags::Output::Indent.

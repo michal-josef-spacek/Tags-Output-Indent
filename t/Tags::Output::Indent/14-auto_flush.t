@@ -1,11 +1,11 @@
 # Modules.
 use File::Object;
 use IO::Scalar;
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 5;
 
 print "Testing: 'auto_flush' parameter.\n";
-my $obj = Tags2::Output::Indent->new(
+my $obj = Tags::Output::Indent->new(
 	'auto_flush' => 1,
 	'output_handler' => \*STDOUT,
 	'xml' => 1,

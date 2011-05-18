@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 2;
 
 print "Testing: Raw.\n";
-my $obj = Tags2::Output::Indent->new;
+my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['r', '<?xml version="1.1">'],
 );

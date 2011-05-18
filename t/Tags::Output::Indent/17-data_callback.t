@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 2;
 
 print "Testing: 'data_callback' parameter.\n";
-my $obj = Tags2::Output::Indent->new;
+my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'tag'],
 	['d', 'a<a', 'a>a', 'a&a'],
@@ -25,7 +25,7 @@ my $sub = sub {
 	}
 	return;
 };
-$obj = Tags2::Output::Indent->new(
+$obj = Tags::Output::Indent->new(
 	'cdata_callback' => $sub,
 	'data_callback' => $sub,
 	'raw_callback' => $sub,

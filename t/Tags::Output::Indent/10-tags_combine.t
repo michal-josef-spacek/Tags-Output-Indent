@@ -1,9 +1,9 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
 print "Testing: Tags combination.\n";
-my $obj = Tags2::Output::Indent->new;
+my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
 	['c', ' COMMENT '],

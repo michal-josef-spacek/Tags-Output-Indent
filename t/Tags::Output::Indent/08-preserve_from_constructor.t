@@ -1,10 +1,10 @@
 # Modules.
-use Tags2::Output::Indent;
+use Tags::Output::Indent;
 use Test::More 'tests' => 4;
 
 print "Testing: Preserving from constructor.\n";
 print "- CHILD1 preserving is off.\n";
-my $obj = Tags2::Output::Indent->new(
+my $obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
 $obj->put(
@@ -21,7 +21,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-$obj = Tags2::Output::Indent->new(
+$obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
 my $text = <<"END";
@@ -52,7 +52,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 print "- CHILD1 preserving is on.\n";
-$obj = Tags2::Output::Indent->new(
+$obj = Tags::Output::Indent->new(
 	'preserved' => ['CHILD1'],
 );
 $obj->put(
@@ -68,7 +68,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-$obj = Tags2::Output::Indent->new(
+$obj = Tags::Output::Indent->new(
 	'preserved' => ['CHILD1'],
 );
 $obj->put(
@@ -92,4 +92,4 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 # TODO Pridat vnorene testy.
-# Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags2::Output::Indent.
+# Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags::Output::Indent.
