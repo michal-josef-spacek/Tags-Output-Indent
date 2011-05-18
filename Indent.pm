@@ -22,7 +22,7 @@ Readonly::Scalar my $LINE_SIZE => 79;
 Readonly::Scalar my $SPACE => q{ };
 
 # Version.
-our $VERSION = 0.06;
+our $VERSION = 0.01;
 
 # Resets internal variables.
 sub reset {
@@ -761,6 +761,6 @@ BSD license.
 
 =head1 VERSION
 
-0.06
+0.01
 
 =cut
