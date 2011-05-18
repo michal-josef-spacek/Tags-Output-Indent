@@ -1,10 +1,10 @@
 # Modules.
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 5;
 use Test::More 'skip_all' => 'Everything bad.';
 
 print "Testing: Normal tag without parameters.\n";
-my $obj = Tags2::Output::Indent2->new;
+my $obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['d', 'data'],
@@ -18,7 +18,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 print "Testing: Normal tag with parameters.\n";
-$obj = Tags2::Output::Indent2->new;
+$obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['a', 'id', 'id_value'],
@@ -33,7 +33,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 print "Testing: Normal tag after normal tag.\n";
-$obj = Tags2::Output::Indent2->new;
+$obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['a', 'id', 'id_value'],
@@ -54,7 +54,7 @@ is($ret, $right_ret);
 
 print "Testing: Normal tag with long data.\n";
 my $long_data = 'a' x 1000;
-$obj = Tags2::Output::Indent2->new;
+$obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['d', $long_data],
@@ -70,7 +70,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 $long_data = 'aaaa ' x 1000;
-$obj = Tags2::Output::Indent2->new;
+$obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['d', $long_data],

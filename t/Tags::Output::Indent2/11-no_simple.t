@@ -1,10 +1,10 @@
 # Modules.
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 1;
 use Test::More 'skip_all' => 'Everything bad.';
 
 print "Testing: No simple.\n";
-my $obj = Tags2::Output::Indent2->new(
+my $obj = Tags::Output::Indent2->new(
 	'no_simple' => ['tag'],
 );
 $obj->put(

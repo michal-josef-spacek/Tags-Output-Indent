@@ -1,6 +1,6 @@
 # Modules.
 use File::Object;
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 3;
 use Test::More 'skip_all' => 'Everything bad.';
 
@@ -8,7 +8,7 @@ use Test::More 'skip_all' => 'Everything bad.';
 do File::Object->new->up->file('get_stdout.inc')->serialize;
 
 print "Testing: 'auto_flush' parameter.\n";
-my $obj = Tags2::Output::Indent2->new(
+my $obj = Tags::Output::Indent2->new(
 	'auto_flush' => 1,
 	'output_handler' => \*STDOUT,
 	'xml' => 1,

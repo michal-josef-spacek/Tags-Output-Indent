@@ -1,11 +1,11 @@
 # Modules.
 use English qw(-no_match_vars);
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 4;
 use Test::More 'skip_all' => 'Everything bad.';
 
 print "Testing: CDATA.\n";
-my $obj = Tags2::Output::Indent2->new;
+my $obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'tag'],
 	['cd', 'aaaaa<dddd>dddd'],
@@ -15,7 +15,7 @@ my $ret = $obj->flush;
 my $right_ret = "<tag>\n  <![CDATA[aaaaa<dddd>dddd]]>\n</tag>";
 is($ret, $right_ret);
 
-$obj = Tags2::Output::Indent2->new(
+$obj = Tags::Output::Indent2->new(
 	'cdata_indent' => 1,
 );
 $obj->put(
@@ -34,7 +34,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-$obj = Tags2::Output::Indent2->new(
+$obj = Tags::Output::Indent2->new(
 	'cdata_indent' => 0,
 );
 $obj->put(
@@ -52,7 +52,7 @@ chomp $right_ret;
 is($ret, $right_ret);
 
 print "Testing: CDATA errors.\n";
-$obj = Tags2::Output::Indent2->new;
+$obj = Tags::Output::Indent2->new;
 eval {
 	$obj->put(
 		['b', 'tag'],

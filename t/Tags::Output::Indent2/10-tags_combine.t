@@ -1,10 +1,10 @@
 # Modules.
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 1;
 use Test::More 'skip_all' => 'Everything bad.';
 
 print "Testing: Tags combination.\n";
-my $obj = Tags2::Output::Indent2->new;
+my $obj = Tags::Output::Indent2->new;
 $obj->put(
 	['b', 'MAIN'],
 	['c', ' COMMENT '],

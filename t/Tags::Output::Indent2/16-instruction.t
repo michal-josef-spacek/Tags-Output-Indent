@@ -1,10 +1,10 @@
 # Modules.
-use Tags2::Output::Indent2;
+use Tags::Output::Indent2;
 #use Test::More 'tests' => 1;
 use Test::More 'skip_all' => 'Everything bad.';
 
 print "Testing: Instruction.\n";
-my $obj = Tags2::Output::Indent2->new;
+my $obj = Tags::Output::Indent2->new;
 $obj->put(
 	['i', 'perl', 'print "1\n";'],
 );
