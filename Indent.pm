@@ -1,7 +1,7 @@
-package Tags2::Output::Indent;
+package Tags::Output::Indent;
 
 # Pragmas.
-use base qw(Tags2::Output::Core);
+use base qw(Tags::Output::Core);
 use strict;
 use warnings;
 
@@ -12,8 +12,8 @@ use Indent::Word;
 use Indent::Block;
 use List::MoreUtils qw(none);
 use Readonly;
-use Tags2::Utils qw(encode_attr_entities encode_char_entities);
-use Tags2::Utils::Preserve;
+use Tags::Utils qw(encode_attr_entities encode_char_entities);
+use Tags::Utils::Preserve;
 
 # Constants.
 Readonly::Scalar my $EMPTY_STR => q{};
@@ -66,7 +66,7 @@ sub reset {
 	$self->{'raw_tag'} = 0;
 
 	# Preserved object.
-	$self->{'preserve_obj'} = Tags2::Utils::Preserve->new(
+	$self->{'preserve_obj'} = Tags::Utils::Preserve->new(
 		'preserved' => $self->{'preserved'},
 	);
 
@@ -517,12 +517,12 @@ __END__
 
 =head1 NAME
 
- Tags2::Output::Indent - Indent class for Tags2.
+ Tags::Output::Indent - Indent class for Tags.
 
 =head1 SYNOPSIS
 
- use Tags2::Output::Indent(%params);
- my $tags2 = Tags2::Output::Indent->new;
+ use Tags::Output::Indent(%params);
+ my $tags2 = Tags::Output::Indent->new;
  $tags2->put(['b', 'tag']);
  my @open_tags = $tags2->open_tags;
  $tags2->finalize;
@@ -543,7 +543,7 @@ __END__
 
  Subroutine for output processing of attribute key and value.
  Input argument is reference to array.
- Default value is &Tags2::Utils::encode_attr_entities.
+ Default value is &Tags::Utils::encode_attr_entities.
  Example is similar as 'data_callback'.
 
 =item * C<attr_delimeter>
@@ -555,7 +555,7 @@ __END__
  Example:
  Prints <tag attr='val' /> instead default <tag attr="val" />
 
- my $tags2 = Tags2::Output::Indent->new(
+ my $tags2 = Tags::Output::Indent->new(
          'attr_delimeter' => "'",
  );
  $tags2->put(
@@ -586,7 +586,7 @@ __END__
 
  Subroutine for output processing of data.
  Input argument is reference to array.
- Default value is &Tags2::Utils::encode_char_entities.
+ Default value is &Tags::Utils::encode_char_entities.
 
  Example:
  'data_callback' => sub {
@@ -618,7 +618,7 @@ __END__
  That's normal in html pages, web browsers has problem with <script /> tag.
  Prints <script></script> instead <script />.
 
- my $tags2 = Tags2::Output::Raw->new(
+ my $tags2 = Tags::Output::Raw->new(
          'no_simple' => ['script']
  );
  $tags2->put(
@@ -709,10 +709,10 @@ __END__
  use warnings;
 
  # Modules.
- use Tags2::Output::Indent;
+ use Tags::Output::Indent;
 
  # Object.
- my $tags = Tags2::Output::Indent->new;
+ my $tags = Tags::Output::Indent->new;
 
  # Put data.
  $tags2->put(
@@ -737,19 +737,19 @@ L<Indent::Word(3pm)>,
 L<Indent::Block(3pm)>,
 L<List::MoreUtils(3pm)>,
 L<Readonly(3pm)>,
-L<Tags2::Utils::Preserve(3pm)>.
+L<Tags::Utils::Preserve(3pm)>.
 
 =head1 SEE ALSO
 
-L<Tags2(3pm)>,
-L<Tags2::Output::Core(3pm)>,
-L<Tags2::Output::ESIS(3pm)>,
-L<Tags2::Output::Indent2(3pm)>,
-L<Tags2::Output::LibXML(3pm)>,
-L<Tags2::Output::PYX(3pm)>,
-L<Tags2::Output::Raw(3pm)>,
-L<Tags2::Output::SESIS(3pm)>,
-L<Tags2::Utils(3pm)>.
+L<Tags(3pm)>,
+L<Tags::Output::Core(3pm)>,
+L<Tags::Output::ESIS(3pm)>,
+L<Tags::Output::Indent2(3pm)>,
+L<Tags::Output::LibXML(3pm)>,
+L<Tags::Output::PYX(3pm)>,
+L<Tags::Output::Raw(3pm)>,
+L<Tags::Output::SESIS(3pm)>,
+L<Tags::Utils(3pm)>.
 
 =head1 AUTHOR
 

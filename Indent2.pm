@@ -1,7 +1,7 @@
-package Tags2::Output::Indent2;
+package Tags::Output::Indent2;
 
 # Pragmas.
-use base qw(Tags2::Output::Core);
+use base qw(Tags::Output::Core);
 use strict;
 use warnings;
 
@@ -11,7 +11,7 @@ use Indent;
 use Indent::Word;
 use Indent::Block;
 use Readonly;
-use Tags2::Utils::Preserve;
+use Tags::Utils::Preserve;
 
 # Constants.
 Readonly::Scalar my $EMPTY_STR => q{};
@@ -63,7 +63,7 @@ sub reset {
 	$self->{'raw_tag'} = 0;
 
 	# Preserved object.
-	$self->{'preserve_obj'} = Tags2::Utils::Preserve->new(
+	$self->{'preserve_obj'} = Tags::Utils::Preserve->new(
 		'preserved' => $self->{'preserved'},
 	);
 
@@ -206,12 +206,12 @@ __END__
 
 =head1 NAME
 
- Tags2::Output::Indent2 - Indent class for Tags2.
+ Tags::Output::Indent2 - Indent class for Tags.
 
 =head1 SYNOPSIS
 
- use Tags2::Output::Indent2(%params);
- my $tags2 = Tags2::Output::Indent2->new;
+ use Tags::Output::Indent2(%params);
+ my $tags2 = Tags::Output::Indent2->new;
  $tags2->put(['b', 'tag']);
  my @open_tags = $tags2->open_tags;
  $tags2->finalize;
@@ -237,7 +237,7 @@ __END__
  Example:
  Prints <tag attr='val' /> instead default <tag attr="val" />
 
- my $tags2 = Tags2::Output::Indent->new(
+ my $tags2 = Tags::Output::Indent->new(
          'attr_delimeter' => "'",
  );
  $tags2->put(
@@ -276,7 +276,7 @@ __END__
  That's normal in html pages, web browsers has problem with <script /> tag.
  Prints <script></script> instead <script />.
 
- my $tags2 = Tags2::Output::Raw->new(
+ my $tags2 = Tags::Output::Raw->new(
          'no_simple' => ['script']
  );
  $tags2->put(
@@ -352,10 +352,10 @@ __END__
  use warnings;
 
  # Modules.
- use Tags2::Output::Indent2;
+ use Tags::Output::Indent2;
 
  # Object.
- my $tags = Tags2::Output::Indent2->new;
+ my $tags = Tags::Output::Indent2->new;
 
  # Put data.
  $tags2->put(
@@ -376,19 +376,19 @@ L<Error::Pure(3pm)>,
 L<Indent(3pm)>,
 L<Indent::Word(3pm)>,
 L<Indent::Block(3pm)>,
-L<Tags2::Utils::Preserve(3pm)>.
+L<Tags::Utils::Preserve(3pm)>.
 
 =head1 SEE ALSO
 
-L<Tags2(3pm)>,
-L<Tags2::Output::Core(3pm)>,
-L<Tags2::Output::ESIS(3pm)>,
-L<Tags2::Output::Indent(3pm)>,
-L<Tags2::Output::LibXML(3pm)>,
-L<Tags2::Output::PYX(3pm)>,
-L<Tags2::Output::Raw(3pm)>,
-L<Tags2::Output::SESIS(3pm)>,
-L<Tags2::Utils(3pm)>.
+L<Tags(3pm)>,
+L<Tags::Output::Core(3pm)>,
+L<Tags::Output::ESIS(3pm)>,
+L<Tags::Output::Indent(3pm)>,
+L<Tags::Output::LibXML(3pm)>,
+L<Tags::Output::PYX(3pm)>,
+L<Tags::Output::Raw(3pm)>,
+L<Tags::Output::SESIS(3pm)>,
+L<Tags::Utils(3pm)>.
 
 =head1 AUTHOR
 
