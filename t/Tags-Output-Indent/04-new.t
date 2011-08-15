@@ -5,7 +5,7 @@ use warnings;
 # Modules.
 use English qw(-no_match_vars);
 use Tags::Output::Indent;
-use Test::More 'tests' => 7;
+use Test::More 'tests' => 6;
 
 my $obj;
 eval {
@@ -34,5 +34,4 @@ eval {
 is($EVAL_ERROR, 'Output handler is bad file handler.'."\n");
 
 $obj = Tags::Output::Indent->new;
-ok(defined $obj);
-ok($obj->isa('Tags::Output::Indent'));
+isa_ok($obj, 'Tags::Output::Indent');
