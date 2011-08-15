@@ -3,25 +3,33 @@ use strict;
 use warnings;
 
 # Modules.
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
 # Definition.
-WriteMakefile(
-	'AUTHOR' => 'Michal Špaček <skim@cpan.org>',
-	'LICENSE' => 'bsd',
-	'NAME' => 'Tags::Output::Indent',
-	'PREREQ_PM' => {
-		'Class::Utils' => 0.01,
-		'Error::Pure' => 0.01,
-		'File::Object' => 0,
-		'Indent' => 0,
-		'List::MoreUtils' => 0,
-		'Readonly' => 0,
-		'Tags' => 0.01,
-	},
-	'VERSION' => 0.01,
-	'test' => {
-		'TESTS' => 't/Tags::Output::Indent/*.t '.
-			't/Tags::Output::Indent2/*.t',
-	},
-);
+abstract 'Indented output for Tags.';
+author 'Michal Špaček <skim@cpan.org>';
+license 'bsd';
+name 'Tags-Output-Indent';
+requires 'Error::Pure' => 0.05;
+requires 'Indent' => 0.01;
+requires 'Indent::Word' => 0.01;
+requires 'Indent::Block' => 0.01;
+requires 'List::MoreUtils' => 0;
+requires 'Readonly' => 0;
+requires 'Tags::Utils' => 0.01;
+requires 'Tags::Utils::Preserve' => 0.01;
+resources 'repository' => {
+	'url' => 'git://github.com/tupinek/Tags-Output-Indent',
+	'web' => 'https://github.com/tupinek/Tags-Output-Indent',
+	'type' => 'git',
+};
+test_requires 'English' => 0;
+test_requires 'File::Object' => 0.01;
+test_requires 'Test::More' => 0;
+test_requires 'Test::Pod' => 0;
+test_requires 'Test::Pod::Coverage' => 0;
+tests_recursive;
+version '0.01';
+
+# Run.
+WriteAll();

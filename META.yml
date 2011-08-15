@@ -1,0 +1,40 @@
+---
+abstract: 'Indented output for Tags.'
+author:
+  - 'Michal Špaček <skim@cpan.org>'
+build_requires:
+  English: 0
+  ExtUtils::MakeMaker: 6.42
+  File::Object: 0.01
+  Test::More: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
+distribution_type: module
+generated_by: 'Module::Install version 1.01'
+license: bsd
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Tags-Output-Indent
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  Error::Pure: 0.05
+  Indent: 0.01
+  Indent::Block: 0.01
+  Indent::Word: 0.01
+  List::MoreUtils: 0
+  Readonly: 0
+  Tags::Utils: 0.01
+  Tags::Utils::Preserve: 0.01
+resources:
+  license: http://opensource.org/licenses/bsd-license.php
+  repository:
+    type: git
+    url: git://github.com/tupinek/Tags-Output-Indent
+    web: https://github.com/tupinek/Tags-Output-Indent
+version: 0.01
