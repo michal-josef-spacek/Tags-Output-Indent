@@ -1,8 +1,15 @@
+# Pragmas.
+use strict;
+use warnings;
+
 # Modules.
 use Test::More 'tests' => 2;
 
 BEGIN {
-	print "Usage tests.\n";
+
+	# Test.
 	use_ok('Tags::Output::Indent');
 }
+
+# Test.
 require_ok('Tags::Output::Indent');
