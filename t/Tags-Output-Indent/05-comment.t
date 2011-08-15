@@ -2,7 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 10;
 
-print "Testing: Comment.\n";
 my $obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );

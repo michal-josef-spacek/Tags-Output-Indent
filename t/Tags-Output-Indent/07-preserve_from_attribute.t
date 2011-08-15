@@ -2,10 +2,8 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
-print "Testing: Preserving from attributes.\n";
 # TODO Preserving v sgml (coz je tento kod) urcite neni definovano jako
 # xml:space.
-print "- CHILD1 preserving is off.\n";
 my $obj = Tags::Output::Indent->new;
 my $text = <<"END";
   text
@@ -34,7 +32,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "- CHILD1 preserving is on.\n";
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],

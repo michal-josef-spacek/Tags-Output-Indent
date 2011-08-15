@@ -2,7 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 6;
 
-print "Testing: Simple tag without parameters (sgml version).\n";
 my $obj = Tags::Output::Indent->new(
 	'xml' => 0,
 );
@@ -18,7 +17,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Simple tag with parameters (sgml version).\n";
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],
@@ -33,7 +31,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Simple tag after simple tag (sgml version).\n";
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],
@@ -53,7 +50,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Simple tag without parameters (xml version).\n";
 $obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );
@@ -64,7 +60,6 @@ $obj->put(
 $ret = $obj->flush;
 is($ret, '<main />');
 
-print "Testing: Simple tag with parameters (xml version).\n";
 $obj->reset;
 $obj->put(
 	['b', 'main'],
@@ -74,7 +69,6 @@ $obj->put(
 $ret = $obj->flush;
 is($ret, '<main id="id_value" />');
 
-print "Testing: Simple tag after simple tag (xml version).\n";
 $obj->reset;
 $obj->put(
 	['b', 'main'],

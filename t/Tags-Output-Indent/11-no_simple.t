@@ -2,7 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
-print "Testing: No simple.\n";
 my $obj = Tags::Output::Indent->new(
 	'no_simple' => ['tag'],
 );

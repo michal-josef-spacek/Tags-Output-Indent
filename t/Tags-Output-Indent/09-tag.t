@@ -2,7 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 5;
 
-print "Testing: Normal tag without parameters.\n";
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -18,7 +17,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Normal tag with parameters.\n";
 $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -51,7 +49,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Normal tag after normal tag.\n";
 $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -75,7 +72,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: Normal tag with long data.\n";
 my $long_data = 'a' x 1000;
 $obj = Tags::Output::Indent->new;
 $obj->put(

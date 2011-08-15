@@ -2,7 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
-print "Testing: Tags combination.\n";
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],

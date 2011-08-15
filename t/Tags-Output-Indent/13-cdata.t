@@ -3,7 +3,6 @@ use English qw(-no_match_vars);
 use Tags::Output::Indent;
 use Test::More 'tests' => 4;
 
-print "Testing: CDATA.\n";
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'tag'],
@@ -50,7 +49,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "Testing: CDATA errors.\n";
 $obj = Tags::Output::Indent->new;
 eval {
 	$obj->put(

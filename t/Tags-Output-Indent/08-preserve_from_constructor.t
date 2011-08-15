@@ -2,8 +2,6 @@
 use Tags::Output::Indent;
 use Test::More 'tests' => 4;
 
-print "Testing: Preserving from constructor.\n";
-print "- CHILD1 preserving is off.\n";
 my $obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
@@ -51,7 +49,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
-print "- CHILD1 preserving is on.\n";
 $obj = Tags::Output::Indent->new(
 	'preserved' => ['CHILD1'],
 );
