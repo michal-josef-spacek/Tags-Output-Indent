@@ -18,11 +18,10 @@ requires 'List::MoreUtils' => 0;
 requires 'Readonly' => 0;
 requires 'Tags::Utils' => 0.01;
 requires 'Tags::Utils::Preserve' => 0.01;
-resources 'repository' => {
-	'url' => 'git://github.com/tupinek/Tags-Output-Indent',
-	'web' => 'https://github.com/tupinek/Tags-Output-Indent',
-	'type' => 'git',
-};
+resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
+	'?Name=Tags-Output-Indent';
+resources 'homepage' => 'https://github.com/tupinek/Tags-Output-Indent';
+resources 'repository' => 'git://github.com/tupinek/Tags-Output-Indent';
 test_requires 'English' => 0;
 test_requires 'File::Object' => 0.01;
 test_requires 'Test::More' => 0;
