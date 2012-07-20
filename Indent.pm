@@ -736,25 +736,25 @@ __END__
 
 =head1 DEPENDENCIES
 
-L<Error::Pure(3pm)>,
-L<Indent(3pm)>,
-L<Indent::Word(3pm)>,
-L<Indent::Block(3pm)>,
-L<List::MoreUtils(3pm)>,
-L<Readonly(3pm)>,
-L<Tags::Utils::Preserve(3pm)>.
+L<Error::Pure>,
+L<Indent>,
+L<Indent::Word>,
+L<Indent::Block>,
+L<List::MoreUtils>,
+L<Readonly>,
+L<Tags::Utils::Preserve>.
 
 =head1 SEE ALSO
 
 L<Tags(3pm)>,
-L<Tags::Output::Core(3pm)>,
-L<Tags::Output::ESIS(3pm)>,
-L<Tags::Output::Indent2(3pm)>,
-L<Tags::Output::LibXML(3pm)>,
-L<Tags::Output::PYX(3pm)>,
-L<Tags::Output::Raw(3pm)>,
-L<Tags::Output::SESIS(3pm)>,
-L<Tags::Utils(3pm)>.
+L<Tags::Output::Core>,
+L<Tags::Output::ESIS>,
+L<Tags::Output::Indent2>,
+L<Tags::Output::LibXML>,
+L<Tags::Output::PYX>,
+L<Tags::Output::Raw>,
+L<Tags::Output::SESIS>,
+L<Tags::Utils>.
 
 =head1 AUTHOR
 
