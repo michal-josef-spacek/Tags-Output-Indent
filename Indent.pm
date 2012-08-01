@@ -746,7 +746,7 @@ L<Tags::Utils::Preserve>.
 
 =head1 SEE ALSO
 
-L<Tags(3pm)>,
+L<Tags>,
 L<Tags::Output::Core>,
 L<Tags::Output::ESIS>,
 L<Tags::Output::Indent2>,
