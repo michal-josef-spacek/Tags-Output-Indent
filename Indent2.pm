@@ -1,7 +1,7 @@
 package Tags::Output::Indent2;
 
 # Pragmas.
-use base qw(Tags::Output::Core);
+use base qw(Tags::Output);
 use strict;
 use warnings;
 
@@ -381,7 +381,7 @@ L<Tags::Utils::Preserve>.
 =head1 SEE ALSO
 
 L<Tags>,
-L<Tags::Output::Core>,
+L<Tags::Output>,
 L<Tags::Output::ESIS>,
 L<Tags::Output::Indent>,
 L<Tags::Output::LibXML>,

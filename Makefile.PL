@@ -16,6 +16,7 @@ requires 'Indent::Word' => 0.01;
 requires 'Indent::Block' => 0.01;
 requires 'List::MoreUtils' => 0;
 requires 'Readonly' => 0;
+requires 'Tags::Output' => 0.01;
 requires 'Tags::Utils' => 0.01;
 requires 'Tags::Utils::Preserve' => 0.01;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.

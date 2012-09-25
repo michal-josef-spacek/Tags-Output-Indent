@@ -30,6 +30,7 @@ requires:
   Indent::Word: 0.01
   List::MoreUtils: 0
   Readonly: 0
+  Tags::Output: 0.01
   Tags::Utils: 0.01
   Tags::Utils::Preserve: 0.01
 resources:
