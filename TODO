@@ -1,7 +1,9 @@
 TODO
 ====
 1. Pridat # Test. do testu.
-2.
+2. Kdyz dam <script> s odkazem na soubor a pote dalsi a dalsi, tak 
+   se neodradkuje ten druhy oproti prvnimu.
+3.
 
 Applied
 =======
