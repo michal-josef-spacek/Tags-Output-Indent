@@ -7,7 +7,13 @@ TODO
    - v XML modu pise error
    - bez XML modu se spatne vykresluje.
    Tags-Output-Raw funguje spravne.
-3.
+3. Pokud je na tag preserve a je zapnuty XML mod, tak spatne vykresluji
+   zjednodusene tagy. Nemel bych za zjednodusenym tagem davat "\n"
+   Viz /perl/MODULES/Tags-Output-Raw> ./ex37.pl 1
+   <head><script language="javascript" type="text/javascript" src="/javascript/jquery/jquery.js" />
+   <script language="javascript" type="text/javascript" src="/javascript/jquery-ui/jquery-ui.js" />
+   </head>
+4.
 
 Applied
 =======
