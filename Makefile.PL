@@ -10,6 +10,7 @@ abstract 'Indented output for Tags.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Tags-Output-Indent';
+readme_from 'Indent.pm';
 requires 'Error::Pure' => 0.05;
 requires 'Indent' => 0.01;
 requires 'Indent::Word' => 0.01;
