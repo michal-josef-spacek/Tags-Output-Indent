@@ -8,6 +8,7 @@ use IO::Scalar;
 use Tags::Output::Indent;
 use Test::More 'tests' => 5;
 
+# Test.
 my $obj = Tags::Output::Indent->new(
 	'auto_flush' => 1,
 	'output_handler' => \*STDOUT,
@@ -23,6 +24,7 @@ untie *STDOUT;
 my $right_ret = '<tag />';
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 undef $ret;
 tie *STDOUT, 'IO::Scalar', \$ret;
@@ -31,6 +33,7 @@ $obj->put(['e', 'tag']);
 untie *STDOUT;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 undef $ret;
 tie *STDOUT, 'IO::Scalar', \$ret;
@@ -48,6 +51,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 undef $ret;
 tie *STDOUT, 'IO::Scalar', \$ret;
@@ -69,6 +73,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 undef $ret;
 tie *STDOUT, 'IO::Scalar', \$ret;

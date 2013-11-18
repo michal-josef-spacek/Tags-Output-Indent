@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
+# Test.
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],

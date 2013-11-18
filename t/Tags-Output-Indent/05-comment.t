@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 10;
 
+# Test.
 my $obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );
@@ -21,6 +22,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['c', 'comment-'],
@@ -29,6 +31,7 @@ $ret = $obj->flush;
 $right_ret = '<!--comment- -->';
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['c', '<tag>comment</tag>'],
@@ -37,6 +40,7 @@ $ret = $obj->flush;
 $right_ret = '<!--<tag>comment</tag>-->';
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag'],
@@ -52,6 +56,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag'],
@@ -68,6 +73,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag'],
@@ -86,6 +92,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'oo'],
@@ -108,6 +115,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag'],
@@ -126,6 +134,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag'],
@@ -141,6 +150,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'tag1'],

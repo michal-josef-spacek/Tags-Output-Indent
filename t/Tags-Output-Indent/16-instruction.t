@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
+# Test.
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['i', 'perl', 'print "1\n";'],

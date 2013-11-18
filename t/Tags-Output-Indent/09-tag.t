@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 5;
 
+# Test.
 my $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -21,6 +22,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -37,6 +39,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'], 
@@ -53,6 +56,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new;
 $obj->put(
 	['b', 'MAIN'],
@@ -76,6 +80,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 my $long_data = 'a' x 1000;
 $obj = Tags::Output::Indent->new;
 $obj->put(
@@ -92,6 +97,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $long_data = 'aaaa ' x 1000;
 $obj = Tags::Output::Indent->new;
 $obj->put(

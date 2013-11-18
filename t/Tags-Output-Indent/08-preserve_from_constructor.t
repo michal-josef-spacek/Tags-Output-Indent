@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 4;
 
+# Test.
 my $obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
@@ -23,6 +24,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
@@ -53,6 +55,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new(
 	'preserved' => ['CHILD1'],
 );
@@ -69,6 +72,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new(
 	'preserved' => ['CHILD1'],
 );
@@ -92,5 +96,6 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 # TODO Pridat vnorene testy.
 # Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags::Output::Indent.

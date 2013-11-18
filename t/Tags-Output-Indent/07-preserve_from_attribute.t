@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 1;
 
+# Test.
 # TODO Preserving v sgml (coz je tento kod) urcite neni definovano jako
 # xml:space.
 my $obj = Tags::Output::Indent->new;
@@ -36,6 +37,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],
@@ -59,5 +61,6 @@ chomp $right_ret;
 # XXX SKIP
 #is($ret, $right_ret);
 
+# Test.
 # TODO Pridat vnorene testy.
 # Bude jich hromada. Viz. ex18.pl az ex24.pl v Tags::Output::Indent.

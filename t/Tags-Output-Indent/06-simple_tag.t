@@ -6,6 +6,7 @@ use warnings;
 use Tags::Output::Indent;
 use Test::More 'tests' => 6;
 
+# Test.
 my $obj = Tags::Output::Indent->new(
 	'xml' => 0,
 );
@@ -21,6 +22,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],
@@ -35,6 +37,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'MAIN'],
@@ -54,6 +57,7 @@ END
 chomp $right_ret;
 is($ret, $right_ret);
 
+# Test.
 $obj = Tags::Output::Indent->new(
 	'xml' => 1,
 );
@@ -64,6 +68,7 @@ $obj->put(
 $ret = $obj->flush;
 is($ret, '<main />');
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'main'],
@@ -73,6 +78,7 @@ $obj->put(
 $ret = $obj->flush;
 is($ret, '<main id="id_value" />');
 
+# Test.
 $obj->reset;
 $obj->put(
 	['b', 'main'],
