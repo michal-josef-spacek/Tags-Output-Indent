@@ -12,7 +12,10 @@ TODO
    <head><script language="javascript" type="text/javascript" src="/javascript/jquery/jquery.js" />
    <script language="javascript" type="text/javascript" src="/javascript/jquery-ui/jquery-ui.js" />
    </head>
-4.
+4. V Tags::Output::Indent se muze rozdelit atribut na novy radek. To muze?
+5. Tags::Output::Indent prepsat. Kod, ke je prehazovani comment pred/za tag je
+   neefektivni. Idealni to resit pred timto modulem primo na strukture.
+6.
 
 Applied
 =======
