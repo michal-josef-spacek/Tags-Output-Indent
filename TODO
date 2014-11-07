@@ -15,7 +15,10 @@ TODO
 4. V Tags::Output::Indent se muze rozdelit atribut na novy radek. To muze?
 5. Tags::Output::Indent prepsat. Kod, ke je prehazovani comment pred/za tag je
    neefektivni. Idealni to resit pred timto modulem primo na strukture.
-6.
+6. Prozkoumat v Tags::Output::Indent volani 'indent_block'. Mohla by tam byt
+   stejna chyba jako u 'indent_word', ze se bere pole misto skalaru.
+   Mozna by bylo dobre vubec zvazit uziti vraceni skalaru z indent funkci.
+7.
 
 Applied
 =======
