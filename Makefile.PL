@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Indented output for Tags.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Tags-Output-Indent';
 readme_from 'Indent.pm';
