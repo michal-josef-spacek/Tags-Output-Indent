@@ -18,7 +18,8 @@ TODO
 6. Prozkoumat v Tags::Output::Indent volani 'indent_block'. Mohla by tam byt
    stejna chyba jako u 'indent_word', ze se bere pole misto skalaru.
    Mozna by bylo dobre vubec zvazit uziti vraceni skalaru z indent funkci.
-7.
+7. Odstranit SKIP z testu.
+8.
 
 Applied
 =======
