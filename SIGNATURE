@@ -1,0 +1,60 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 5346b34d8852fd60268dfc696ec3486fe04989bd Changes
+SHA1 e8c770ffb1df0189819510382cd61c1187db0a57 Indent.pm
+SHA1 08fd8460f89e60e6921db3fee79ad7354065faaa MANIFEST
+SHA1 39e5df185758de3ffe3230dbb5c915c75ecff826 META.yml
+SHA1 4cd56cbf916b8342948e57d8069a3050a17bd8d2 Makefile.PL
+SHA1 ff5b589e852b9fa7d5fab9371280a4d58327e300 README
+SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
+SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
+SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
+SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
+SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
+SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
+SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
+SHA1 21ed3fac6ad549bf0919def00cfbd0ffbee6442e t/Tags-Output-Indent/00-use.t
+SHA1 aa3469eb54bddc7db7c84a55e5b4b1a6471fbbb6 t/Tags-Output-Indent/01-version.t
+SHA1 e1da6ca2abe03e69b1a72df05f083b2a81cfdf3d t/Tags-Output-Indent/02-pod_coverage.t
+SHA1 239eeb48afefac73d41178263c0bafa963b3f2b4 t/Tags-Output-Indent/03-pod.t
+SHA1 4cd966e258b816f3f6683d96028eb1b0c4b0c238 t/Tags-Output-Indent/04-new.t
+SHA1 c2e6810a886cc5ff628d5da73d68c8788c30a641 t/Tags-Output-Indent/05-comment.t
+SHA1 bb8516eef496f39afeb41749ebf8a55504870e13 t/Tags-Output-Indent/06-simple_tag.t
+SHA1 18ecb6d7bf61e51b03b52784be482b999abf6138 t/Tags-Output-Indent/07-preserve_from_attribute.t
+SHA1 9919d851893eaf90cd7474bf87b89045e9df6d7e t/Tags-Output-Indent/08-preserve_from_constructor.t
+SHA1 a998c16b4ca3de5d0c5c98fc350ba7cd9a8ad369 t/Tags-Output-Indent/09-tag.t
+SHA1 3e94e00f66a6db315902867ad8c9aa4d85fc38b6 t/Tags-Output-Indent/10-tags_combine.t
+SHA1 2fe7df57c855d2b7995fc54e43d68c4ae56449ff t/Tags-Output-Indent/11-no_simple.t
+SHA1 9c2082f142c00bf5e7ece31617411a13b49ebaf8 t/Tags-Output-Indent/12-raw.t
+SHA1 c5c5f6eedf27391a56d34b6cad3a61df8eb6e53d t/Tags-Output-Indent/13-cdata.t
+SHA1 5255c49d71c00431a20bb5a063e922120682d7dc t/Tags-Output-Indent/14-auto_flush.t
+SHA1 2f155c39e80bf269eb1bc5096c4a50cb65c09964 t/Tags-Output-Indent/15-attributes.t
+SHA1 8c86927b110987f2801bb906fb7b04e78e4f20ba t/Tags-Output-Indent/16-instruction.t
+SHA1 6607d7a679206de38a84bdf5786e01158c4ae435 t/Tags-Output-Indent/17-data_callback.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJVB/n/AAoJEJe+XXKaIuTljTMH/1OQxLR59x8sYdTKhJBUhVhd
+yPlj/VCHm7sefTvKaOSZahkdkeLEWEHV8TDwwJndNpnl6hfMqh2vhodEJIGiKSCM
+I5KpgsjJS/E5NktDIM5+4FKD2cqZMDw5O7OhilkC2gZSNJwi5Ues6vctCazGwyw6
+NOkFZLuRHeqG9fG38j55EZk+yZlCufW1QSgSl3z+/5KD/bpT2ljucEPDqxr2GZCb
+Ar/unBchL0fnQ15/TT8Miju2EGnhiF/6nsKm3wv7UjCLs3Ku27dDTFsgFIn0704+
+8cqJfuioEP1scZ6oe0S1VviXwAnjl/yFM5ydo51IzlGV/o9U8fG0TDowxSGGK/4=
+=vTo1
+-----END PGP SIGNATURE-----
