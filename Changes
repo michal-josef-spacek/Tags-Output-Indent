@@ -1,5 +1,6 @@
 0.02
  - Add Test::NoWarnings to version test.
+ - Add examples/ directory.
 
 0.01 2015-03-17T10:54:46+01:00
  - First version.
