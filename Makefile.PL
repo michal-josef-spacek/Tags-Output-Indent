@@ -20,6 +20,7 @@ requires 'Readonly' => 0;
 requires 'Tags::Output' => 0.01;
 requires 'Tags::Utils' => 0.01;
 requires 'Tags::Utils::Preserve' => 0.01;
+requires 'perl' => 5.6.0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Tags-Output-Indent';
 resources 'homepage' => 'https://github.com/tupinek/Tags-Output-Indent';
