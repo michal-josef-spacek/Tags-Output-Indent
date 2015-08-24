@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,23 +14,24 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 5346b34d8852fd60268dfc696ec3486fe04989bd Changes
-SHA1 e8c770ffb1df0189819510382cd61c1187db0a57 Indent.pm
-SHA1 08fd8460f89e60e6921db3fee79ad7354065faaa MANIFEST
-SHA1 39e5df185758de3ffe3230dbb5c915c75ecff826 META.yml
-SHA1 4cd56cbf916b8342948e57d8069a3050a17bd8d2 Makefile.PL
-SHA1 ff5b589e852b9fa7d5fab9371280a4d58327e300 README
-SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
-SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
-SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
-SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
-SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
-SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
+SHA1 dc455a9b108decdcdfb4a5a3a379e3e779183115 Changes
+SHA1 3bc352c7a94e41aa3676b5d8351f189b49497993 Indent.pm
+SHA1 738e5288cf246758b7424bb4bfad01ead5ba1dc1 MANIFEST
+SHA1 65196c2150e316a68b2ab932bab45097f328cf96 META.yml
+SHA1 05856bc4f7e0726051e945e32436649f86934897 Makefile.PL
+SHA1 2fa4da1642155a357be8fbd5dc59c448a679cbd1 README
+SHA1 daadd79de65252eec47c3ce7b0c0894090cf7731 examples/ex1.pl
+SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
+SHA1 fe220f215f645500ce8f14ff5e19d9a28692af56 inc/Module/Install/Base.pm
+SHA1 b56ed8e42c600e08007d152cf0b1438a7c3b7f6e inc/Module/Install/Can.pm
+SHA1 99c531a17a67ce5250df2ae151cc48c80d914cde inc/Module/Install/Fetch.pm
+SHA1 76efdca3603159e0ae0e18f19fe72a0211a69529 inc/Module/Install/Makefile.pm
+SHA1 2e33e87882d60db3913da6284dd5295e5315e18a inc/Module/Install/Metadata.pm
 SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
-SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
-SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
+SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
+SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
 SHA1 21ed3fac6ad549bf0919def00cfbd0ffbee6442e t/Tags-Output-Indent/00-use.t
-SHA1 aa3469eb54bddc7db7c84a55e5b4b1a6471fbbb6 t/Tags-Output-Indent/01-version.t
+SHA1 ff72ae1d7f9ebbff14f2199b046585bb53479be3 t/Tags-Output-Indent/01-version.t
 SHA1 e1da6ca2abe03e69b1a72df05f083b2a81cfdf3d t/Tags-Output-Indent/02-pod_coverage.t
 SHA1 239eeb48afefac73d41178263c0bafa963b3f2b4 t/Tags-Output-Indent/03-pod.t
 SHA1 4cd966e258b816f3f6683d96028eb1b0c4b0c238 t/Tags-Output-Indent/04-new.t
@@ -48,13 +49,13 @@ SHA1 2f155c39e80bf269eb1bc5096c4a50cb65c09964 t/Tags-Output-Indent/15-attributes
 SHA1 8c86927b110987f2801bb906fb7b04e78e4f20ba t/Tags-Output-Indent/16-instruction.t
 SHA1 6607d7a679206de38a84bdf5786e01158c4ae435 t/Tags-Output-Indent/17-data_callback.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJVB/n/AAoJEJe+XXKaIuTljTMH/1OQxLR59x8sYdTKhJBUhVhd
-yPlj/VCHm7sefTvKaOSZahkdkeLEWEHV8TDwwJndNpnl6hfMqh2vhodEJIGiKSCM
-I5KpgsjJS/E5NktDIM5+4FKD2cqZMDw5O7OhilkC2gZSNJwi5Ues6vctCazGwyw6
-NOkFZLuRHeqG9fG38j55EZk+yZlCufW1QSgSl3z+/5KD/bpT2ljucEPDqxr2GZCb
-Ar/unBchL0fnQ15/TT8Miju2EGnhiF/6nsKm3wv7UjCLs3Ku27dDTFsgFIn0704+
-8cqJfuioEP1scZ6oe0S1VviXwAnjl/yFM5ydo51IzlGV/o9U8fG0TDowxSGGK/4=
-=vTo1
+iQEcBAEBAgAGBQJV2uWkAAoJEJe+XXKaIuTl4qUH/itv1flDvf61hTI8Yndw03YZ
+TVSDo8xP8FuN3XrIsS1yse/m9FmIvegu38bmBuOEpVHlNH18azdINUB7mJ4K+dkx
+yMrt6t+u49WGhGOZ3rKc4TVLR2Gswzhded+9Pml+yucidUzgCjXc/IkscT5Gx0Bv
+mGLG0n9IwldKlun8tfDIvaPvGSFtSFyrY5cVmd03x26i4tHwCJUMfpUeMVMdezPH
+VL2uptfGKl2Mw4T3ij99Xog/d/hSYS9GQMtTlKjmXEihpZdSyjl7rbzUywXvzZt7
+Qfk3cWs4ZSvaeeq25gPItk4j7/+lS4IlZJgzbt5Yo5a2eq8a+GbyBuqFuzYowxc=
+=c/oY
 -----END PGP SIGNATURE-----
