@@ -746,15 +746,33 @@ L<Tags::Utils::Preserve>.
 
 =head1 SEE ALSO
 
-L<Tags>,
-L<Tags::Output>,
-L<Tags::Output::ESIS>,
-L<Tags::Output::Indent2>,
-L<Tags::Output::LibXML>,
-L<Tags::Output::PYX>,
-L<Tags::Output::Raw>,
-L<Tags::Output::SESIS>,
-L<Tags::Utils>.
+=over
+
+=item L<Tags>
+
+Structure oriented SGML/XML/HTML/etc. elements manipulation.
+
+=item L<Tags::Output>
+
+Base class for Tags::Output::*.
+
+=item L<Tags::Output::LibXML>
+
+Printing 'Tags' structure by LibXML library.
+
+=item L<Tags::Output::PYX>
+
+PYX class for line oriented output for 'Tags'.
+
+=item L<Tags::Output::Raw>
+
+Raw printing 'Tags' structure to tags code.
+
+=item L<Tags::Utils>
+
+Utils module for Tags.
+
+=back
 
 =head1 AUTHOR
 
