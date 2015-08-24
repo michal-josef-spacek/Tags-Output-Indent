@@ -3,6 +3,7 @@
  - Add examples/ directory.
  - Add minimal version of Perl.
  - Fix test dependencies.
+ - Update Module::Install to 1.16 version.
 
 0.01 2015-03-17T10:54:46+01:00
  - First version.
