@@ -36,7 +36,7 @@ requires:
   Tags::Output: 0.01
   Tags::Utils: 0.01
   Tags::Utils::Preserve: 0.01
-  perl: "\x05\x06\0"
+  perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tags-Output-Indent
   homepage: https://github.com/tupinek/Tags-Output-Indent
