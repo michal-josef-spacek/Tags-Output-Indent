@@ -1,4 +1,4 @@
-0.03
+0.03 2015-08-25T23:02:33+02:00
  - Fix perl version in Makefile.PL and META.yml.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SEE ALSO section in doc.
