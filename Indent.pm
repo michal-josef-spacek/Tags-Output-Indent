@@ -22,7 +22,7 @@ Readonly::Scalar my $LINE_SIZE => 79;
 Readonly::Scalar my $SPACE => q{ };
 
 # Version.
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 # Resets internal variables.
 sub reset {
@@ -773,6 +773,6 @@ Michal Špaček L<skim@cpan.org>
 
 =head1 VERSION
 
-0.04
+0.05
 
 =cut
