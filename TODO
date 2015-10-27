@@ -19,7 +19,8 @@ TODO
    stejna chyba jako u 'indent_word', ze se bere pole misto skalaru.
    Mozna by bylo dobre vubec zvazit uziti vraceni skalaru z indent funkci.
 7. Odstranit SKIP z testu.
-8.
+8. Pridat komentare do testu.
+9.
 
 Applied
 =======
