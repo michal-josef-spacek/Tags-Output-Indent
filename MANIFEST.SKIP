@@ -9,4 +9,5 @@ MYMETA.json
 MYMETA.yml
 Indent2.pm
 TODO
+cover_db/
 .travis.yml
