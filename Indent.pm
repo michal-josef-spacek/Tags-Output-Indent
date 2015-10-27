@@ -756,21 +756,9 @@ Structure oriented SGML/XML/HTML/etc. elements manipulation.
 
 Base class for Tags::Output::*.
 
-=item L<Tags::Output::LibXML>
+=item L<Task::Tags>
 
-Printing 'Tags' structure by LibXML library.
-
-=item L<Tags::Output::PYX>
-
-PYX class for line oriented output for 'Tags'.
-
-=item L<Tags::Output::Raw>
-
-Raw printing 'Tags' structure to tags code.
-
-=item L<Tags::Utils>
-
-Utils module for Tags.
+Install the Tags modules.
 
 =back
 

@@ -209,17 +209,8 @@ SEE ALSO
     Tags::Output
         Base class for Tags::Output::*.
 
-    Tags::Output::LibXML
-        Printing 'Tags' structure by LibXML library.
-
-    Tags::Output::PYX
-        PYX class for line oriented output for 'Tags'.
-
-    Tags::Output::Raw
-        Raw printing 'Tags' structure to tags code.
-
-    Tags::Utils
-        Utils module for Tags.
+    Task::Tags
+        Install the Tags modules.
 
 AUTHOR
     Michal Špaček skim@cpan.org
