@@ -1,5 +1,6 @@
 0.04
  - Improve SEE ALSO section in doc.
+ - Improve doc.
  - Move author tests to xt/ directory.
 
 0.03 2015-08-25T23:02:33+02:00

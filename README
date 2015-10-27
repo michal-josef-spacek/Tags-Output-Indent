@@ -76,12 +76,12 @@ METHODS
 
             *       "line_size"
 
-                     TODO
+                     Line size.
                      Default value is 79.
 
             *       "next_indent"
 
-                     TODO
+                     Value of indent, which are added to begin of line.
                      Default value is "  ".
 
             *       "no_simple"
@@ -115,14 +115,14 @@ METHODS
                      Must be a GLOB.
                      Default is undef.
 
-            *       "output_separator"
+            *       "output_sep"
 
-                     TODO
+                     Output separator.
                      Default value is newline (\n).
 
             *       "preserved"
 
-                     TODO
+                     List of elements, which content will be preserved.
                      Default value is reference to blank array.
 
             *       "raw_callback"
@@ -134,12 +134,12 @@ METHODS
 
             *       "skip_bad_tags"
 
-                     TODO
+                     Skip bad tags.
                      Default value is 0.
 
             *       "strict_instruction"
 
-                     TODO
+                     Strict instruction.
                      Default value is 1.
 
     "finalize()"

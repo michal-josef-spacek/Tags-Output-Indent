@@ -601,12 +601,12 @@ __END__
 
 =item * C<line_size>
 
- TODO
+ Line size.
  Default value is 79.
 
 =item * C<next_indent>
 
- TODO
+ Value of indent, which are added to begin of line.
  Default value is "  ".
 
 =item * C<no_simple>
@@ -640,14 +640,14 @@ __END__
  Must be a GLOB.
  Default is undef.
 
-=item * C<output_separator>
+=item * C<output_sep>
 
- TODO
+ Output separator.
  Default value is newline (\n).
 
 =item * C<preserved>
 
- TODO
+ List of elements, which content will be preserved.
  Default value is reference to blank array.
 
 =item * C<raw_callback>
@@ -659,12 +659,12 @@ __END__
 
 =item * C<skip_bad_tags>
 
- TODO
+ Skip bad tags.
  Default value is 0.
 
 =item * C<strict_instruction>
 
- TODO
+ Strict instruction.
  Default value is 1.
 
 =back
