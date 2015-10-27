@@ -1,4 +1,5 @@
 0.04
+ - Move author tests to xt/ directory.
 
 0.03 2015-08-25T23:02:33+02:00
  - Fix perl version in Makefile.PL and META.yml.
