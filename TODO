@@ -20,7 +20,6 @@ TODO
    Mozna by bylo dobre vubec zvazit uziti vraceni skalaru z indent funkci.
 7. Odstranit SKIP z testu.
 8. Pridat komentare do testu.
-10. Pridat testy na finalize() a open_tags() z Tags::Output::Raw.
 11.
 
 Applied
@@ -29,4 +28,7 @@ Applied
 OK [20131118] skim
 
 9. Pridat opravu z Tags::Output::Raw ve verzi 0.05 ohledne finalize()
+OK [20160322] skim
+
+10. Pridat testy na finalize() a open_tags() z Tags::Output::Raw.
 OK [20160322] skim

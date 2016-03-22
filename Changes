@@ -1,5 +1,6 @@
 0.05
  - Add LICENSE file.
+ - Add tests for finalize() and open_tags() methods.
  - Fix finalize() in SGML mode.
  - Rewrite test files to better names.
 
