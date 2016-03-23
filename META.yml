@@ -41,4 +41,4 @@ resources:
   homepage: https://github.com/tupinek/Tags-Output-Indent
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/Tags-Output-Indent
-version: '0.05'
+version: '0.06'

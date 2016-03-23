@@ -22,7 +22,7 @@ Readonly::Scalar my $LINE_SIZE => 79;
 Readonly::Scalar my $SPACE => q{ };
 
 # Version.
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 # Finalize Tags output.
 sub finalize {
@@ -797,6 +797,6 @@ Michal Špaček L<skim@cpan.org>
 
 =head1 VERSION
 
-0.05
+0.06
 
 =cut
