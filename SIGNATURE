@@ -14,12 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 7be501ddd3d953a9cf1bccd91217897c0c4c1a6c Changes
-SHA1 ec1053bb09b0ab04a04a1d79c0176eab4c62eb1e Indent.pm
-SHA1 8ff3b2fd9ab0d1011bacc772347037d0e1456a89 MANIFEST
-SHA1 ee0f0237ae939a36dc2095b3015dd428c975b35c META.yml
-SHA1 c1621436b2b4dc10ea0ae7a6b5aa5b796128bb42 Makefile.PL
-SHA1 2e2639ebc902ad46c6be49c7430269514b1f199d README
+SHA1 224dbb93012319e90b492a7d28cd6eb35034b795 Changes
+SHA1 d0990ccff04f1b13eb6629dad6fa7a48b6922207 Indent.pm
+SHA1 2c511157dfdf92a515f663ead7842444270de63a LICENSE
+SHA1 fe9e9d91250d4a881533bff340a869a18d3ada8e MANIFEST
+SHA1 08dc10841ced30fc32327fa251477656057de8be META.yml
+SHA1 9d2002c005ce2c5ed70073464e3f5731d03cd7d6 Makefile.PL
+SHA1 b2487988186dfbc83b444e999d45a79167de1532 README
 SHA1 daadd79de65252eec47c3ce7b0c0894090cf7731 examples/ex1.pl
 SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
 SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
@@ -33,31 +34,33 @@ SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.p
 SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
 SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
 SHA1 2c3efccdba2b1c3eedadaf8e7a6ead1636ee21cf t/Tags-Output-Indent/01-use.t
-SHA1 cf6e2ce5276cced7062d55a4707f0de58e38df54 t/Tags-Output-Indent/02-version.t
+SHA1 c1cddf0ef8cb3c458f303b020d812d3fa90a1836 t/Tags-Output-Indent/02-version.t
 SHA1 4cd966e258b816f3f6683d96028eb1b0c4b0c238 t/Tags-Output-Indent/03-new.t
-SHA1 c2e6810a886cc5ff628d5da73d68c8788c30a641 t/Tags-Output-Indent/04-comment.t
-SHA1 bb8516eef496f39afeb41749ebf8a55504870e13 t/Tags-Output-Indent/05-simple_tag.t
-SHA1 18ecb6d7bf61e51b03b52784be482b999abf6138 t/Tags-Output-Indent/06-preserve_from_attribute.t
-SHA1 9919d851893eaf90cd7474bf87b89045e9df6d7e t/Tags-Output-Indent/07-preserve_from_constructor.t
-SHA1 a998c16b4ca3de5d0c5c98fc350ba7cd9a8ad369 t/Tags-Output-Indent/08-tag.t
-SHA1 3e94e00f66a6db315902867ad8c9aa4d85fc38b6 t/Tags-Output-Indent/09-tags_combine.t
-SHA1 2fe7df57c855d2b7995fc54e43d68c4ae56449ff t/Tags-Output-Indent/10-no_simple.t
-SHA1 9c2082f142c00bf5e7ece31617411a13b49ebaf8 t/Tags-Output-Indent/11-raw.t
-SHA1 c5c5f6eedf27391a56d34b6cad3a61df8eb6e53d t/Tags-Output-Indent/12-cdata.t
-SHA1 5255c49d71c00431a20bb5a063e922120682d7dc t/Tags-Output-Indent/13-auto_flush.t
-SHA1 2f155c39e80bf269eb1bc5096c4a50cb65c09964 t/Tags-Output-Indent/14-attributes.t
-SHA1 8c86927b110987f2801bb906fb7b04e78e4f20ba t/Tags-Output-Indent/15-instruction.t
-SHA1 6607d7a679206de38a84bdf5786e01158c4ae435 t/Tags-Output-Indent/16-data_callback.t
+SHA1 94bca548bdc34ec509326cf74c0e1a56170c564e t/Tags-Output-Indent/04-finalize.t
+SHA1 73e14b193a36e851d40b69a0db96c40de7ec8925 t/Tags-Output-Indent/05-open_tags.t
+SHA1 c2e6810a886cc5ff628d5da73d68c8788c30a641 t/Tags-Output-Indent/06-put-comment.t
+SHA1 bb8516eef496f39afeb41749ebf8a55504870e13 t/Tags-Output-Indent/07-put-simple_tag.t
+SHA1 18ecb6d7bf61e51b03b52784be482b999abf6138 t/Tags-Output-Indent/08-put-preserve_from_attribute.t
+SHA1 9919d851893eaf90cd7474bf87b89045e9df6d7e t/Tags-Output-Indent/09-put-preserve_from_constructor.t
+SHA1 a998c16b4ca3de5d0c5c98fc350ba7cd9a8ad369 t/Tags-Output-Indent/10-put-tag.t
+SHA1 3e94e00f66a6db315902867ad8c9aa4d85fc38b6 t/Tags-Output-Indent/11-put-tags_combine.t
+SHA1 2fe7df57c855d2b7995fc54e43d68c4ae56449ff t/Tags-Output-Indent/12-put-no_simple.t
+SHA1 9c2082f142c00bf5e7ece31617411a13b49ebaf8 t/Tags-Output-Indent/13-put-raw.t
+SHA1 c5c5f6eedf27391a56d34b6cad3a61df8eb6e53d t/Tags-Output-Indent/14-put-cdata.t
+SHA1 5255c49d71c00431a20bb5a063e922120682d7dc t/Tags-Output-Indent/15-put-auto_flush.t
+SHA1 2f155c39e80bf269eb1bc5096c4a50cb65c09964 t/Tags-Output-Indent/16-put-attributes.t
+SHA1 8c86927b110987f2801bb906fb7b04e78e4f20ba t/Tags-Output-Indent/17-put-instruction.t
+SHA1 6607d7a679206de38a84bdf5786e01158c4ae435 t/Tags-Output-Indent/18-put-data_callback.t
 SHA1 65bbd630c9c8eff5d7c78547b027824164dc1093 xt/Tags-Output-Indent/01-pod_coverage.t
 SHA1 fb4282e1fd6b938fa20a4eca735143af5ec667c4 xt/Tags-Output-Indent/02-pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWL2LZAAoJEJe+XXKaIuTlnmEH/jdxuXCvSENIWWy52EPrVVhd
-EwoaleLypO04YIV+YyXVUld/gdHxdYSaYqev/OkmU1HZTV/w5AGvcH6LvVniHDn9
-qvEYLAxRJg3ea5kSfXDiLIrN7Ck7WPLsgyR6MXRxla5ga7msRNQXf9t+aN5kqtrc
-uAedFzsrPiQ02JiOjmiSxfjpzCM2nnZ49c0D1uViLWvTgDt5y/Q38VFc4i1U/4F2
-jjEHOsY1gVzD88bUHDOz1xSLj+z+ZaQzdUUNbbU/LtFG+QpGtnnzVKvxhmlMiscw
-4ghneejDB0taK5AHG7OtEGGcrnLFKcqPNrOfQUPOsO0xX3WZG181p3DlL7Ya/vI=
-=W+iz
+iQEcBAEBAgAGBQJW8vsVAAoJEJe+XXKaIuTlvXsIAIOWZXzwkO+xrDT+Speq6ihY
+n6CvEOrZw0YckFmYP3kv8GTNkl1WaFhRG6TXbZ2aAEm3N+vprv+8/H4BAiGzsjKD
+HaJIDUf9ErvxTYLQMTncDrPGQ5Aqnux7OUtwYnB/gZnjfJwDKIlWdAE8praklaAd
+FRWKuJSxCZI9UsubOs+bQzLQDGrMTYQmEeVGnnzIGj0G0Cblb0xfO0ffQoOx0P1B
+FjV4SB6ymER7pUoF089NQwnX4O0C+NtEmzSE0+W4ZMchTUJ6Isex4a98UkdpZIcg
+me5i3NAdSIupzQoZoETjq/bzudfIyv6a7WsbJdYEo1JGH2r0NRJNb8Lq05J6tJE=
+=nfEP
 -----END PGP SIGNATURE-----
