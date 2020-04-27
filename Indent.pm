@@ -327,10 +327,10 @@ sub _put_begin_of_tag {
 		$self->_print_tag('>');
 	}
 
-	# XML check for uppercase names.
-	if ($self->{'xml'} && $tag ne lc($tag)) {
-		err 'In XML must be lowercase tag name.';
-	}
+	# TODO Add checking of XML element name.
+#	if ($self->{'xml'} && _check(element_name)) {
+#		err 'This is not XML format.';
+#	}
 
 	# Push begin of tag to tmp code.
 	push @{$self->{'tmp_code'}}, "<$tag";
