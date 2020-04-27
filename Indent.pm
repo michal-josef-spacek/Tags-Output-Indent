@@ -1,11 +1,9 @@
 package Tags::Output::Indent;
 
-# Pragmas.
 use base qw(Tags::Output);
 use strict;
 use warnings;
 
-# Modules.
 use Error::Pure qw(err);
 use Indent;
 use Indent::Word;
@@ -21,7 +19,6 @@ Readonly::Scalar my $LAST_INDEX => -1;
 Readonly::Scalar my $LINE_SIZE => 79;
 Readonly::Scalar my $SPACE => q{ };
 
-# Version.
 our $VERSION = 0.06;
 
 # Finalize Tags output.
@@ -733,11 +730,9 @@ __END__
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Tags::Output::Indent;
 
  # Object.

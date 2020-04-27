@@ -173,11 +173,9 @@ ERRORS
      In XML mode must be a attribute value.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Tags::Output::Indent;
 
      # Object.
