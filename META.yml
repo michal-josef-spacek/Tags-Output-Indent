@@ -38,7 +38,7 @@ requires:
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tags-Output-Indent
-  homepage: https://github.com/tupinek/Tags-Output-Indent
+  homepage: https://github.com/michal-josef-spacek/Tags-Output-Indent
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Tags-Output-Indent
+  repository: git://github.com/michal-josef-spacek/Tags-Output-Indent
 version: '0.06'
