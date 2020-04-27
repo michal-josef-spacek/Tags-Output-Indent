@@ -2,6 +2,7 @@
  - Add author website to doc.
  - Add open_elements() method, deprecate open_tags() method with warning.
  - Add repository name to doc.
+ - Add some comments to tests.
  - Fix issue with XML element in lowercase only.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SYNOPSIS section in doc.
