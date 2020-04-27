@@ -1,5 +1,6 @@
 0.06
  - Fix issue with XML element in lowercase only.
+ - Improve LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.19 version.
  - Update author github username.
  - Update copyright years.
