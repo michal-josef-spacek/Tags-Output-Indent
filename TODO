@@ -20,7 +20,10 @@ TODO
    Mozna by bylo dobre vubec zvazit uziti vraceni skalaru z indent funkci.
 7. Odstranit SKIP z testu.
 8. Pridat komentare do testu.
-11.
+11. Resit velikost nazvu elementu - muze byt velkyma pismenama
+https://www.w3.org/TR/xml/#NT-NameStartChar
+12. Opravit ERRORS sekci
+13.
 
 Applied
 =======
