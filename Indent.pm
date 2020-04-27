@@ -783,11 +783,11 @@ Install the Tags modules.
 
 =head1 AUTHOR
 
-Michal Špaček L<skim@cpan.org>
+Michal Josef Špaček L<skim@cpan.org>
 
 =head1 LICENSE AND COPYRIGHT
 
-© 2011-2020 Michal Špaček
+© 2011-2020 Michal Josef Špaček
 
 BSD 2-Clause License
 
