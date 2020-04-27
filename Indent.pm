@@ -543,6 +543,7 @@ __END__
 =head1 SYNOPSIS
 
  use Tags::Output::Indent(%params);
+
  my $tags = Tags::Output::Indent->new;
  $tags->put(['b', 'tag']);
  my @open_tags = $tags->open_tags;
