@@ -781,6 +781,10 @@ Install the Tags modules.
 
 =back
 
+=head1 REPOSITORY
+
+L<https://github.com/michal-josef-spacek/Tags-Output-Indent>
+
 =head1 AUTHOR
 
 Michal Josef Špaček L<skim@cpan.org>

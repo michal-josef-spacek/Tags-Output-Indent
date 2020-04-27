@@ -1,4 +1,5 @@
 0.06
+ - Add repository name to doc.
  - Fix issue with XML element in lowercase only.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.19 version.
