@@ -22,9 +22,9 @@ requires 'Indent::Word' => 0.01;
 requires 'Indent::Block' => 0.01;
 requires 'List::MoreUtils' => 0;
 requires 'Readonly' => 0;
-requires 'Tags::Output' => 0.01;
-requires 'Tags::Utils' => 0.01;
-requires 'Tags::Utils::Preserve' => 0.01;
+requires 'Tags::Output' => 0.09;
+requires 'Tags::Utils' => 0.09;
+requires 'Tags::Utils::Preserve' => 0.09;
 requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Tags-Output-Indent';
@@ -35,6 +35,7 @@ test_requires 'File::Object' => 0.01;
 test_requires 'IO::Scalar' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
+test_requires 'Test::Warn' => 0;
 tests_recursive;
 version '0.06';
 

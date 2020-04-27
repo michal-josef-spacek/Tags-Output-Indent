@@ -9,6 +9,7 @@ build_requires:
   IO::Scalar: 0
   Test::More: 0
   Test::NoWarnings: 0
+  Test::Warn: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.36
 distribution_type: module
@@ -32,9 +33,9 @@ requires:
   Indent::Word: 0.01
   List::MoreUtils: 0
   Readonly: 0
-  Tags::Output: 0.01
-  Tags::Utils: 0.01
-  Tags::Utils::Preserve: 0.01
+  Tags::Output: 0.09
+  Tags::Utils: 0.09
+  Tags::Utils::Preserve: 0.09
   perl: 5.6.0
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Tags-Output-Indent
