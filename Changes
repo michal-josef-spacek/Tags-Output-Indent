@@ -1,4 +1,4 @@
-0.06
+0.06 2020-04-28T00:10:37+02:00
  - Add author website to doc.
  - Add open_elements() method, deprecate open_tags() method with warning.
  - Add repository name to doc.
