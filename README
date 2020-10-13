@@ -75,6 +75,13 @@ METHODS
                              return;
                      }
 
+            *       "input_tags_item_callback"
+
+                     Input 'Tags' item callback.
+                     Callback is processing before main 'Tags' put().
+                     It's usefull for e.g. validation.
+                     Default value is undef.
+
             *       "line_size"
 
                      Line size.
