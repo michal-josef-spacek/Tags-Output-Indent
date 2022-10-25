@@ -1,3 +1,5 @@
+0.09
+
 0.08 2022-10-25T16:13:46+02:00
  - Add 'no_data_callback' parameter to set list of elements which not
    process 'data_callback'. Example is 'script' in which we don't need HTML
