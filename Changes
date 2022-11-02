@@ -1,4 +1,5 @@
 0.09
+ - Change bugtracker to github.
  - Fix warning for 'no_data_callback' if isn't in element.
 
 0.08 2022-10-25T16:13:46+02:00
