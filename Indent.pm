@@ -8,7 +8,7 @@ use Error::Pure qw(err);
 use Indent;
 use Indent::Word;
 use Indent::Block;
-use List::MoreUtils qw(none);
+use List::Util qw(none);
 use Readonly;
 use Tags::Utils qw(encode_attr_entities encode_char_entities);
 use Tags::Utils::Preserve;
@@ -800,7 +800,7 @@ L<Error::Pure>,
 L<Indent>,
 L<Indent::Word>,
 L<Indent::Block>,
-L<List::MoreUtils>,
+L<List::Util>,
 L<Readonly>,
 L<Tags::Utils::Preserve>.
 
