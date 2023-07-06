@@ -721,6 +721,11 @@ Returns instance of class.
  Strict instruction.
  Default value is 1.
 
+=item * C<xml>
+
+ Flag, that means xml output.
+ Default is 0 (sgml).
+
 =back
 
 =head2 C<finalize>
