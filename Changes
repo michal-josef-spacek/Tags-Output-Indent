@@ -1,6 +1,7 @@
 0.11
  - Add xml parameter to doc.
  - Update Module::Install to 1.21 version.
+ - Update copyright years.
 
 0.10 2023-01-09T11:38:05+01:00
  - Add test messages.
