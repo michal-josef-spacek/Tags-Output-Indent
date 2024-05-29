@@ -1,5 +1,6 @@
 0.11
  - Add test messages.
+ - Add tests for preservation.
  - Add xml parameter to doc.
  - Update Module::Install to 1.21 version.
  - Update copyright years.

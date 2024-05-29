@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Tags::Output::Indent;
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 6;
 
 # Test.
 my $obj = Tags::Output::Indent->new(
@@ -21,6 +21,33 @@ my $right_ret = <<'END';
 END
 chomp $right_ret;
 is($ret, $right_ret, 'Element with data without preservation.');
+
+# Test.
+$obj = Tags::Output::Indent->new(
+	'preserved' => [],
+);
+$obj->put(
+	['b', 'MAIN'],
+	['b', 'CHILD1'],
+	['d', 'text'],
+	['e', 'CHILD1'],
+	['b', 'CHILD2'],
+	['e', 'CHILD2'],
+	['e', 'MAIN']
+);
+$ret = $obj->flush;
+$right_ret = <<'END';
+<MAIN>
+  <CHILD1>
+    text
+  </CHILD1>
+  <CHILD2>
+  </CHILD2>
+</MAIN>
+END
+chomp $right_ret;
+is($ret, $right_ret, 'Nested element with simple data without preservation '.
+	'and another element after it.');
 
 # Test.
 my $text = <<'END';
@@ -95,7 +122,54 @@ $right_ret = <<'END';
 </MAIN>
 END
 chomp $right_ret;
-is($ret, $right_ret, 'Nested element with data with explicit preservation.');
+is($ret, $right_ret, 'Nested element with multiline data with explicit preservation.');
+
+# Test.
+$obj = Tags::Output::Indent->new(
+	'preserved' => ['CHILD1'],
+);
+$obj->put(
+	['b', 'MAIN'],
+	['b', 'CHILD1'],
+	['d', 'text'],
+	['e', 'CHILD1'],
+	['e', 'MAIN']
+);
+$ret = $obj->flush;
+$right_ret = <<'END';
+<MAIN>
+  <CHILD1>
+text</CHILD1>
+</MAIN>
+END
+chomp $right_ret;
+is($ret, $right_ret, 'Nested element with simple data with explicit preservation.');
+
+# Test.
+$obj = Tags::Output::Indent->new(
+	'preserved' => ['CHILD1'],
+);
+$obj->put(
+	['b', 'MAIN'],
+	['b', 'CHILD1'],
+	['d', 'text'],
+	['e', 'CHILD1'],
+	['b', 'CHILD2'],
+	['e', 'CHILD2'],
+	['e', 'MAIN']
+);
+$ret = $obj->flush;
+$right_ret = <<'END';
+<MAIN>
+  <CHILD1>
+text</CHILD1>
+  <CHILD2>
+  </CHILD2>
+</MAIN>
+END
+chomp $right_ret;
+is($ret, $right_ret, 'Nested element with simple data with explicit preservation '.
+	'and another element after it.');
 
 # Test.
 # TODO Pridat vnorene testy.
