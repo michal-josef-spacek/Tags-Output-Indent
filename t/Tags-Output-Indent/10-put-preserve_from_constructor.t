@@ -20,10 +20,10 @@ my $right_ret = <<'END';
 </CHILD1>
 END
 chomp $right_ret;
-is($ret, $right_ret);
+is($ret, $right_ret, 'Element with data without preservation.');
 
 # Test.
-my $text = <<"END";
+my $text = <<'END';
   text
      text
 	text
@@ -71,7 +71,7 @@ $right_ret = <<'END';
 DATA</CHILD1>
 END
 chomp $right_ret;
-is($ret, $right_ret);
+is($ret, $right_ret, 'Element with data with explicit preservation.');
 
 # Test.
 $obj = Tags::Output::Indent->new(
@@ -95,7 +95,7 @@ $right_ret = <<'END';
 </MAIN>
 END
 chomp $right_ret;
-is($ret, $right_ret);
+is($ret, $right_ret, 'Nested element with data with explicit preservation.');
 
 # Test.
 # TODO Pridat vnorene testy.
