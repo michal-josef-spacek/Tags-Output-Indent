@@ -17,7 +17,6 @@ TODO
 11. Resit velikost nazvu elementu - muze byt velkyma pismenama
 https://www.w3.org/TR/xml/#NT-NameStartChar
 12. Opravit ERRORS sekci
-13. Rewrite doc to use of =head2.
 14.
 
 Applied
@@ -38,3 +37,6 @@ OK [20160322] skim
    - bez XML modu se spatne vykresluje.
    Tags-Output-Raw funguje spravne.
 OK [20260331] skim
+
+13. Rewrite doc to use of =head2.
+NONE [20260331] skim
