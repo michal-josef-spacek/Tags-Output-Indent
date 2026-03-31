@@ -448,13 +448,12 @@ sub _put_end_of_tag {
 	if ($self->{'xml'} && (! scalar @{$self->{'no_simple'}}
 		|| none { $_ eq $tag } @{$self->{'no_simple'}})) {
 
-		my $pre = $self->{'preserve_obj'}->end($tag);
+		my ($pre, $pre_pre) = $self->{'preserve_obj'}->end($tag);
 		if (scalar @{$self->{'tmp_code'}}) {
 			if (scalar @{$self->{'tmp_comment_code'}}
 				&& $self->{'comment_flag'} == 1) {
 
 				$self->_print_tag('>');
-# XXX				$self->{'preserve_obj'}->end($tag);
 				$self->_print_end_tag($tag);
 			} else {
 				$self->_print_tag('/>');
@@ -466,16 +465,27 @@ sub _put_end_of_tag {
 			$self->_print_end_tag($tag);
 		}
 
+		# If we just ended a preserved element ($pre_pre == 1), reset the previous flag
+		# so that the next element will start on a new line
+		if ($pre == 0 && $pre_pre == 1) {
+			$self->{'preserve_obj'}->save_previous;
+		}
+
 	# Tag cannot be simple.
 	} else {
 		if (scalar @{$self->{'tmp_code'}}) {
 			unshift @{$self->{'printed_tags'}}, $tag;
 			$self->_print_tag('>');
 			shift @{$self->{'printed_tags'}};
-# XXX				$self->_newline;
 		}
-		$self->{'preserve_obj'}->end($tag);
+		my ($pre, $pre_pre) = $self->{'preserve_obj'}->end($tag);
 		$self->_print_end_tag($tag);
+
+		# If we just ended a preserved element ($pre_pre == 1), reset the previous flag
+		# so that the next element will start on a new line
+		if ($pre == 0 && $pre_pre == 1) {
+			$self->{'preserve_obj'}->save_previous;
+		}
 	}
 	return;
 }
