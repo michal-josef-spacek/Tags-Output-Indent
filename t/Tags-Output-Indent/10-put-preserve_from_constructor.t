@@ -75,7 +75,7 @@ $right_ret = <<'END';
 </MAIN>
 END
 chomp $right_ret;
-is($ret, $right_ret);
+is($ret, $right_ret, 'Element with data which has removed white characters.');
 
 # Test.
 $obj = Tags::Output::Indent->new(
