@@ -1,11 +1,5 @@
 TODO
 ====
-2. Kdyz dam <script> s odkazem na soubor a pote dalsi a dalsi, tak 
-   se neodradkuje ten druhy oproti prvnimu.
-   perl/MODULES/Tags-Output-Indent/ex53.pl problem:
-   - v XML modu pise error
-   - bez XML modu se spatne vykresluje.
-   Tags-Output-Raw funguje spravne.
 3. Pokud je na tag preserve a je zapnuty XML mod, tak spatne vykresluji
    zjednodusene tagy. Nemel bych za zjednodusenym tagem davat "\n"
    Viz /perl/MODULES/Tags-Output-Raw> ./ex37.pl 1
@@ -36,3 +30,11 @@ OK [20160322] skim
 
 10. Pridat testy na finalize() a open_tags() z Tags::Output::Raw.
 OK [20160322] skim
+
+2. Kdyz dam <script> s odkazem na soubor a pote dalsi a dalsi, tak 
+   se neodradkuje ten druhy oproti prvnimu.
+   perl/MODULES/Tags-Output-Indent/ex53.pl problem:
+   - v XML modu pise error
+   - bez XML modu se spatne vykresluje.
+   Tags-Output-Raw funguje spravne.
+OK [20260331] skim
