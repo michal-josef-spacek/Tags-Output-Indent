@@ -99,7 +99,7 @@ sub reset {
 
 # Check parameters to rigth values.
 sub _check_params {
-        my $self = shift;
+	my $self = shift;
 
 	# Check params from SUPER.
 	$self->SUPER::_check_params();
