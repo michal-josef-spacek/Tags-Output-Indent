@@ -11,8 +11,8 @@ my $tags = Tags::Output::Indent->new;
 # Put data.
 $tags->put(
         ['b', 'text'],
- ['d', 'data'],
- ['e', 'text'],
+        ['d', 'data'],
+        ['e', 'text'],
 );
 
 # Print.

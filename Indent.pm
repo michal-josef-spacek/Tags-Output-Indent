@@ -776,6 +776,8 @@ Resets internal variables.
 
 =head1 EXAMPLE
 
+=for comment filename=simple_example.pl
+
  use strict;
  use warnings;
 
@@ -787,8 +789,8 @@ Resets internal variables.
  # Put data.
  $tags->put(
          ['b', 'text'],
-	 ['d', 'data'],
-	 ['e', 'text'],
+         ['d', 'data'],
+         ['e', 'text'],
  );
 
  # Print.

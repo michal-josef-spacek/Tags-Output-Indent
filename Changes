@@ -2,6 +2,7 @@
  - Add test messages.
  - Add tests for preservation.
  - Add xml parameter to doc.
+ - Rename example to better name.
  - Update Module::Install to 1.21 version.
  - Update copyright years.
 
