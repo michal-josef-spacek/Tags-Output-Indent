@@ -23,7 +23,8 @@ TODO
 11. Resit velikost nazvu elementu - muze byt velkyma pismenama
 https://www.w3.org/TR/xml/#NT-NameStartChar
 12. Opravit ERRORS sekci
-13.
+13. Rewrite doc to use of =head2.
+14.
 
 Applied
 =======
