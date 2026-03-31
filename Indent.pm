@@ -784,7 +784,7 @@ Resets internal variables.
  Ending bad tag: '%s' in block of tag '%s'.
  In XML mode must be a attribute value.
 
-=head1 EXAMPLE
+=head1 EXAMPLE1
 
 =for comment filename=simple_example.pl
 
@@ -809,6 +809,45 @@ Resets internal variables.
  # Output:
  # <text>
  #   data
+ # </text>
+
+=head1 EXAMPLE2
+
+=for comment filename=simple_example_utf8.pl
+
+ use strict;
+ use warnings;
+
+ use Tags::Output::Indent;
+ use Unicode::UTF8 qw(decode_utf8 encode_utf8);
+
+ # Object.
+ my $tags = Tags::Output::Indent->new(
+         'data_callback' => sub {
+                 my $data_ar = shift;
+                 foreach my $data (@{$data_ar}) {
+                         $data = encode_utf8($data);
+                 }
+                 return;
+         },
+ );
+
+ # Data in characters.
+ my $data = decode_utf8('řčěšřšč');
+
+ # Put data.
+ $tags->put(
+         ['b', 'text'],
+         ['d', $data],
+         ['e', 'text'],
+ );
+
+ # Print.
+ print $tags->flush."\n";
+
+ # Output:
+ # <text>
+ #   řčěšřšč
  # </text>
 
 =head1 DEPENDENCIES

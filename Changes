@@ -1,4 +1,5 @@
 0.13
+ - Add example to doc.
  - Enable skipped test and add some test messages.
  - Fix issue with presered element.
  - Fix issue with whitespace in data, this was related to Indent::Word.
