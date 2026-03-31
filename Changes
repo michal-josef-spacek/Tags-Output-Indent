@@ -1,5 +1,6 @@
 0.13
  - Fix issue with presered element.
+ - Fix issue with whitespace in data, this was related to Indent::Word.
 
 0.12 2026-03-31T18:12:29+02:00
  - Skip buggy test.

@@ -55,8 +55,6 @@ my $text = <<'END';
      text
 	text
 END
-SKIP: {
-	skip 'Buggy test.', 1;
 $obj = Tags::Output::Indent->new(
 	'preserved' => [],
 );
@@ -72,16 +70,12 @@ $ret = $obj->flush;
 $right_ret = <<'END';
 <MAIN>
   <CHILD1 xml:space="default">
-      text
-     text
-	text
-
+    text text text
   </CHILD1>
 </MAIN>
 END
 chomp $right_ret;
 is($ret, $right_ret);
-};
 
 # Test.
 $obj = Tags::Output::Indent->new(

@@ -19,7 +19,7 @@ readme_from 'Indent.pm';
 recursive_author_tests('xt');
 requires 'Error::Pure' => 0.05;
 requires 'Indent' => 0.01;
-requires 'Indent::Word' => 0.01;
+requires 'Indent::Word' => 0.10;
 requires 'Indent::Block' => 0.01;
 requires 'List::Util' => 1.33;
 requires 'Readonly' => 0;
