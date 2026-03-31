@@ -1,11 +1,5 @@
 TODO
 ====
-3. Pokud je na tag preserve a je zapnuty XML mod, tak spatne vykresluji
-   zjednodusene tagy. Nemel bych za zjednodusenym tagem davat "\n"
-   Viz /perl/MODULES/Tags-Output-Raw> ./ex37.pl 1
-   <head><script language="javascript" type="text/javascript" src="/javascript/jquery/jquery.js" />
-   <script language="javascript" type="text/javascript" src="/javascript/jquery-ui/jquery-ui.js" />
-   </head>
 4. V Tags::Output::Indent se muze rozdelit atribut na novy radek. To muze?
 5. Tags::Output::Indent prepsat. Kod, ke je prehazovani comment pred/za tag je
    neefektivni. Idealni to resit pred timto modulem primo na strukture.
@@ -40,3 +34,11 @@ OK [20260331] skim
 
 13. Rewrite doc to use of =head2.
 NONE [20260331] skim
+
+3. Pokud je na tag preserve a je zapnuty XML mod, tak spatne vykresluji
+   zjednodusene tagy. Nemel bych za zjednodusenym tagem davat "\n"
+   Viz /perl/MODULES/Tags-Output-Raw> ./ex37.pl 1
+   <head><script language="javascript" type="text/javascript" src="/javascript/jquery/jquery.js" />
+   <script language="javascript" type="text/javascript" src="/javascript/jquery-ui/jquery-ui.js" />
+   </head>
+OK [20260331] skim
