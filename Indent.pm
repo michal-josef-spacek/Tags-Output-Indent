@@ -6,7 +6,7 @@ use warnings;
 
 use Error::Pure qw(err);
 use Indent;
-use Indent::Word;
+use Indent::Word 0.10;
 use Indent::Block;
 use List::Util qw(none);
 use Readonly;
