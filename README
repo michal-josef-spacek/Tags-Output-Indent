@@ -6,7 +6,7 @@ SYNOPSIS
 
      my $tags = Tags::Output::Indent->new;
      $tags->put(['b', 'tag']);
-     my @open_tags = $tags->open_tags;
+     my @open_elements = $tags->open_elements;
      $tags->finalize;
      $tags->flush;
      $tags->reset;
@@ -187,10 +187,12 @@ METHODS
     return code. If enabled $reset_flag, then resets internal variables via
     reset method.
 
-  "open_tags"
-     my @open_tags = $tags->open_tags;
+  "open_elements"
+     my @open_elements = $tags->open_elements;
 
-    Return array of opened tags.
+    Get list of opened elements.
+
+    Return array of strings.
 
   "put"
      $tags->put(['b', 'tag']);

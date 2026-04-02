@@ -1,5 +1,6 @@
 0.14
  - Add version of Indent::Word to code.
+ - Fix open_elements() method in doc (was deprecated open_tags()).
  - Regen README file.
  - Remove test for open_tags(), method is deprecated.
 

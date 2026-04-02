@@ -563,7 +563,7 @@ __END__
 
  my $tags = Tags::Output::Indent->new;
  $tags->put(['b', 'tag']);
- my @open_tags = $tags->open_tags;
+ my @open_elements = $tags->open_elements;
  $tags->finalize;
  $tags->flush;
  $tags->reset;
@@ -754,11 +754,13 @@ If defined 'output_handler' flush to its.
 Or return code.
 If enabled $reset_flag, then resets internal variables via reset method.
 
-=head2 C<open_tags>
+=head2 C<open_elements>
 
- my @open_tags = $tags->open_tags;
+ my @open_elements = $tags->open_elements;
 
-Return array of opened tags.
+Get list of opened elements.
+
+Return array of strings.
 
 =head2 C<put>
 
