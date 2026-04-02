@@ -562,10 +562,10 @@ __END__
  use Tags::Output::Indent(%params);
 
  my $tags = Tags::Output::Indent->new;
- $tags->put(['b', 'tag']);
- my @open_elements = $tags->open_elements;
  $tags->finalize;
  $tags->flush;
+ my @open_elements = $tags->open_elements;
+ $tags->put(['b', 'tag']);
  $tags->reset;
 
 =head1 METHODS

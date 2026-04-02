@@ -3,6 +3,7 @@
  - Fix open_elements() method in doc (was deprecated open_tags()).
  - Regen README file.
  - Remove test for open_tags(), method is deprecated.
+ - Sort methods in SYNOPSIS section in doc.
 
 0.13 2026-03-31T21:08:23+02:00
  - Add example to doc.
