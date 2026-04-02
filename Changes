@@ -1,3 +1,5 @@
+0.15
+
 0.14 2026-04-02T08:49:04+02:00
  - Add version of Indent::Word to code.
  - Fix open_elements() method in doc (was deprecated open_tags()).
