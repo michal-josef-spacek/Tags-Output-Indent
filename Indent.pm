@@ -766,7 +766,7 @@ Return array of strings.
 
  $tags->put(['b', 'tag']);
 
-Put tags code in tags format.
+Put L<Tags> structure to object.
 
 =head2 C<reset>
 
