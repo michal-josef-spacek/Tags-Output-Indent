@@ -1,5 +1,6 @@
 0.14
  - Add version of Indent::Word to code.
+ - Regen README file.
  - Remove test for open_tags(), method is deprecated.
 
 0.13 2026-03-31T21:08:23+02:00
