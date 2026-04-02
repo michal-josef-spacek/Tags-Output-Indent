@@ -35,7 +35,6 @@ test_requires 'File::Object' => 0.01;
 test_requires 'IO::Scalar' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;
-test_requires 'Test::Warn' => 0;
 tests_recursive;
 version '0.14';
 
